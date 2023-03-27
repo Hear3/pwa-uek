@@ -1,0 +1,17 @@
+{
+  "name": "pwa uek",
+  "short_name": "PWAUEK",
+  "description": "Github Page as a Progressive Web App for UEK",
+  "scope": "/pwa-uek/",
+  "start_url": "/pwa-uek/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone", 
+  "icons": [
+      {
+        "src": "/pwa-uek/img/icon.png",
+        "type": "image/png",
+        "sizes": "700x700"
+      }
+  ]
+}

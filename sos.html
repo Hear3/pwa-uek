@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<button onclick="sendSOS()">Wyślij SOS</button>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-12 text-center">
+        <a href="main.html" class="btn btn-secondary btn-lg" role="button">Home</a>
+    </div>
+</div>
+</div>
+<script>
+  function sendSOS() {
+    if ("vibrate" in navigator) {
+      navigator.vibrate([100, 100, 100, 300, 300, 300, 100, 100, 100]);
+    } else {
+      // Komunikat w przypadku braku wsparcia dla funkcji vibrate()
+      alert("Twoje urządzenie nie obsługuje wibracji.");
+    }
+  }
+</script>
